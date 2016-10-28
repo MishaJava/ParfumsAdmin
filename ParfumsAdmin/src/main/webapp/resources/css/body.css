@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+body{
+	background-color:linear-gradient(to left, #00d2ff , #928DAB);
+    animation-name: bgcolor;
+    animation-duration: 40s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite; 
+}
+@keyframes bgcolor {
+ 0%{background:linear-gradient(to left, #00d2ff , #928DAB);}
+ 40.0%{background: linear-gradient(to right, #00d2ff 0%,#184c33);}
+ 100.0%{background: linear-gradient(to right, #40b5c0 1%,#253f30 100%);}
+ }

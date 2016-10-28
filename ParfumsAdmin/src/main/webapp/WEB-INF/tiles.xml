@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 
+    <definition name="temp" template="/WEB-INF/tiles/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+        <put-attribute name="body" value = ""/>
+    </definition>
+     <definition name="log" template="/WEB-INF/tiles/log.jsp">
+        <put-attribute name="body" value = ""/>
+    </definition>
+    
+    <definition name = "admin" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/admin.jsp"/>
+    </definition>
+     <definition name = "success" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/success.jsp"/>
+    </definition>
+     <definition name = "allparfums" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/allparfums.jsp"/>
+    </definition>
+     <definition name = "registration" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/registration.jsp"/>
+    </definition>
+    <definition name = "login" extends = "log">
+       <put-attribute name="body" value = "/WEB-INF/views/login.jsp"/>
+    </definition>
+    <definition name = "edit" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/edit.jsp"/>
+    </definition>
+      <definition name = "search" extends = "temp">
+       <put-attribute name="body" value = "/WEB-INF/views/search.jsp"/>
+    </definition>
+      <definition name = "menu">
+      <put-attribute name="header"></put-attribute>
+       <put-attribute name="body" value = "/WEB-INF/views/search.jsp"/>
+       <put-attribute name="footer"></put-attribute>
+    </definition>
+</tiles-definitions>
